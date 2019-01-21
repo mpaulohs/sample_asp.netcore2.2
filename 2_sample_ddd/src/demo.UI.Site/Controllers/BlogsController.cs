@@ -9,6 +9,9 @@ using demo.Domain.Models;
 using demo.Infra.Data.Context;
 using demo.Application.Commands;
 using MediatR;
+using demo.UI.Site.Repository;
+using Microsoft.AspNetCore.Hosting;
+using System.IO;
 
 namespace demo.UI.Site.Controllers
 {
@@ -16,16 +19,24 @@ namespace demo.UI.Site.Controllers
     {
         private readonly DemoContext _context;
         private readonly IMediator _mediator;
+        private readonly IExportXLS _exportXLS;
+        private IHostingEnvironment _hostingEnvironment;
 
-        public BlogsController(DemoContext context, IMediator mediator)
+
+        public BlogsController(DemoContext context, IMediator mediator, 
+            IExportXLS exportXLS, IHostingEnvironment hostingEnvironment)
         {
             _context = context;
             _mediator = mediator;
+            _exportXLS = exportXLS;
+            _hostingEnvironment = hostingEnvironment;
         }
 
         // GET: Blogs
         public async Task<IActionResult> Index()
         {
+            var path = Path.Combine(_hostingEnvironment.WebRootPath, "files/test.xlsx");
+            _exportXLS.Create2(path);
             return View(await _context.Blogs.ToListAsync());
         }
 

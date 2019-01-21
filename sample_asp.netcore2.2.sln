@@ -65,7 +65,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo.Application", "2_sampl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo.Domain", "2_sample_ddd\src\demo.Domain\demo.Domain.csproj", "{38F5F564-5ED5-4F4F-8B41-E52CB09D7731}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo.UI.Site", "2_sample_ddd\src\demo.UI.Site\demo.UI.Site.csproj", "{A88CEAE2-E610-47A4-8DE7-3FA595DC5F8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo.UI.Site", "2_sample_ddd\src\demo.UI.Site\demo.UI.Site.csproj", "{A88CEAE2-E610-47A4-8DE7-3FA595DC5F8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo.WebApi", "2_sample_ddd\src\demo.WebApi\demo.WebApi.csproj", "{24385ECE-8D3A-4A63-874A-A4B88D1DCCF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{A88CEAE2-E610-47A4-8DE7-3FA595DC5F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A88CEAE2-E610-47A4-8DE7-3FA595DC5F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A88CEAE2-E610-47A4-8DE7-3FA595DC5F8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24385ECE-8D3A-4A63-874A-A4B88D1DCCF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24385ECE-8D3A-4A63-874A-A4B88D1DCCF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24385ECE-8D3A-4A63-874A-A4B88D1DCCF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24385ECE-8D3A-4A63-874A-A4B88D1DCCF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,6 +170,7 @@ Global
 		{E0162B5C-A36F-4654-BAFF-A0AF3CBFA6C1} = {6E77C804-D28E-43B5-AFE9-F92D2579BB9C}
 		{38F5F564-5ED5-4F4F-8B41-E52CB09D7731} = {693F1E1E-0FE2-44A6-B9E5-5C2C69D433B2}
 		{A88CEAE2-E610-47A4-8DE7-3FA595DC5F8B} = {6023C2C7-1211-413E-BFCF-C47A8DCF23FB}
+		{24385ECE-8D3A-4A63-874A-A4B88D1DCCF1} = {66B09358-2521-4314-98AF-72977AC834E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {54FAC603-4F39-4E0F-9CF0-75A04D43EDE9}

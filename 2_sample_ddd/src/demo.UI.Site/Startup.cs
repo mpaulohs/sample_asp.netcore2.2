@@ -2,6 +2,7 @@
 using demo.Domain.Models;
 using demo.Infra.CrossCutting.IoC;
 using demo.Infra.Data.Context;
+using demo.UI.Site.Repository;
 using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -44,6 +45,8 @@ namespace demo.UI.Site
             // services.AddMediatR();
             RegisterServices(services);
             AddMediatr(services);
+
+            services.AddScoped<IExportXLS, ExportXLS>();
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
